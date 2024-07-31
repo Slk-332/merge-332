@@ -68,7 +68,7 @@ export default {
     const surname = ref("ศรีลาคำ")
     const age = ref(null)
     const accept = ref(false)
-
+gi
     return {
       id,
       name,
@@ -96,6 +96,8 @@ export default {
       },
 
       onReset () {
+        id.value = null
+        surname.value = null
         name.value = null
         age.value = null
         accept.value = false
